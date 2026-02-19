@@ -28,17 +28,6 @@ The personal portfolio website showcases my skills, projects, and experiences as
 ---
 
 
-
-## 📸 Preview
-
-![Portfolio Preview](images/Portfolio.png)
-
----
-## 🌐 Live Demo
-
-[**View App Here**](https://hsbadgujar.github.io/Portfolio-Website/#home)  
-
----
 ## Contact
 
 If you have any questions or inquiries, please feel free to reach out to me through the contact information provided in the website or by using the contact form.
