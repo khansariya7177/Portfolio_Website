@@ -1,0 +1,700 @@
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 95px;
+  /* Adjust based on your navbar height */
+}
+
+* {
+  box-sizing: border-box;
+  max-width: 100%;
+}
+
+body {
+  padding: 5px;
+  box-sizing: content-box;
+}
+
+.nav {
+  position: sticky;
+  z-index: 1000;
+  background-color: white;
+  top: 0px;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  height: auto;
+  padding: 10px 5px;
+  justify-content: space-between;
+}
+
+h2 {
+  align-content: center;
+  margin-left: 100px;
+}
+
+.links {
+  align-content: center;
+  margin-right: 80px;
+}
+
+li {
+  display: inline-block;
+  padding: 7px;
+  font-weight: lighter;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:active {
+  color: blue;
+  font-weight: bold;
+}
+
+.home {
+  display: flex;
+  width: 80%;
+  min-height: 90vh;
+  height: auto;
+  padding-bottom: 30px;
+  margin: 14px;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.socialicon {
+  flex: auto;
+  display: flex;
+  width: 90px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.info {
+  flex: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 10px;
+  margin: 50px 0px;
+}
+
+.profilephoto {
+  flex: auto;
+  width: 200px;
+  height: 300px;
+  display: flex;
+  margin-bottom: 25px;
+  align-content: center;
+
+}
+
+.about {
+  display: flex;
+  width: 80%;
+  flex-direction: column;
+  min-height: 90vh;
+  height: auto;
+  padding-bottom: 30px;
+  margin: 14px;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 100%;
+  align-items: center;
+}
+
+.title>* {
+  margin: 0%;
+}
+
+.acontent {
+  display: flex;
+  width: 75%;
+  height: auto;
+  margin: 25px;
+  gap: 80px;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.aboutimage {
+  flex: 40%;
+  width: 500px;
+  height: 380px;
+}
+
+.contenta {
+  flex: 60%;
+  min-height: 414px;
+  height: auto;
+}
+
+.cgpa {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 40px;
+}
+
+.cv {
+  padding: 12px 24px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  margin-top: 40px;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.cv:hover {
+  background-color: #0056b3;
+}
+
+.skills {
+  display: flex;
+  width: 80%;
+  flex-direction: column;
+  min-height: 90vh;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.lskill {
+  display: flex;
+  width: 80%;
+  height: auto;
+  padding-bottom: 30px;
+  margin: 14px;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.pl {
+  flex: 50%;
+  display: flex;
+  flex-direction: column;
+  align-content: space-around;
+}
+
+.icon {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: space-around;
+  gap: 30px;
+}
+
+.icon1 {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+
+.quli {
+  display: flex;
+  width: 80%;
+  flex-direction: column;
+  min-height: 90vh;
+  height: auto;
+  margin-top: 50px;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contain {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  display: flex;
+  gap: 12px;
+  flex-direction: column;
+}
+
+.timeline-item {
+  background-color: white;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.timeline-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.education-level {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #2c3e50;
+}
+
+.institution {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 3px;
+  color: #3498db;
+}
+
+.institution-details {
+  font-size: 14px;
+  color: #7f8c8d;
+  margin-bottom: 5px;
+}
+
+.duration {
+  font-size: 14px;
+  color: #95a5a6;
+  margin-top: 8px;
+  display: flex;
+  align-items: center;
+}
+
+.duration:before {
+  content: "自";
+  margin-right: 5px;
+  color: #e74c3c;
+}
+
+.view-more {
+  display: inline-block;
+  margin-top: 10px;
+  color: #3498db;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
+  position: relative;
+  padding-right: 20px;
+  cursor: pointer;
+}
+
+.view-more:after {
+  content: "→";
+  position: absolute;
+  right: 0;
+  transition: transform 0.3s ease;
+}
+
+.view-more:hover:after {
+  transform: translateX(3px);
+}
+
+/* Popup Styles */
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+}
+
+.popup-overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.popup-content {
+  background-color: white;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 600px;
+  padding: 30px;
+  position: relative;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+  transform: translateY(20px);
+  transition: transform 0.3s ease;
+}
+
+.popup-overlay.active .popup-content {
+  transform: translateY(0);
+}
+
+.popup-title {
+  font-size: 24px;
+  margin-bottom: 15px;
+  color: #2c3e50;
+}
+
+.popup-details {
+  line-height: 1.6;
+  color: #555;
+}
+
+.close-popup {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  width: 30px;
+  height: 30px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-size: 20px;
+  color: #95a5a6;
+  transition: color 0.3s ease;
+}
+
+.close-popup:hover {
+  color: #e74c3c;
+}
+
+.projects {
+  display: flex;
+  width: 80%;
+  flex-direction: column;
+  min-height: 90vh;
+  height: auto;
+  justify-content: center;
+  margin-top: 50px;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.slider-container {
+  max-width: 900px;
+  margin: 60px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  position: relative;
+  overflow: hidden;
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: transparent;
+  border: none;
+  font-size: 2rem;
+  color: #6a42ff;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.arrow.left {
+  left: 10px;
+}
+
+.arrow.right {
+  right: 10px;
+}
+
+.slider {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  width: 100%;
+}
+
+.slide {
+  min-width: 100%;
+  padding: 20px;
+  text-align: center;
+  transition: opacity 0.5s;
+}
+
+.slide img {
+  max-width: 100%;
+  max-height: 250px;
+  /* ✅ Limit image height */
+  width: auto;
+  height: 150px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  object-fit: contain;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.slide img:hover {
+  width: auto;
+  height: auto;
+  /* Slight zoom */
+}
+
+.slide h2 {
+  margin: 10px 0;
+  font-size: 22px;
+  color: #333;
+}
+
+.slide p {
+  max-width: 700px;
+  margin: auto;
+  font-size: 15px;
+  color: #666;
+  line-height: 1.6;
+}
+
+.buttons {
+  margin-top: 15px;
+}
+
+.buttons a {
+  text-decoration: none;
+  background: #6a42ff;
+  color: white;
+  padding: 10px 16px;
+  margin: 5px;
+  display: inline-block;
+  border-radius: 8px;
+  transition: background 0.3s ease;
+}
+
+.buttons a:hover {
+  background: #5938cc;
+}
+
+.contme {
+  display: flex;
+  width: 80%;
+  flex-direction: column;
+  min-height: 90vh;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.form {
+  display: flex;
+  margin-top: 30px;
+  width: 100%;
+  height: auto;
+  justify-content: space-around;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.fleft {
+  flex: 45%;
+  margin-left: auto;
+  justify-content: center;
+}
+
+.fright {
+  flex: 45%;
+  margin-left: 30px;
+  justify-content: center;
+}
+
+.call {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 10px;
+  height: auto;
+}
+
+.fform {
+  display: flex;
+  flex-direction: column;
+}
+
+input,
+textarea {
+  width: 70%;
+  padding: 15px;
+  margin: 2px 0;
+  margin-top: 7px;
+  border: none;
+  border-radius: 8px;
+  background-color: #f0efff;
+  font-size: 14px;
+  color: #333;
+  outline: none;
+}
+
+.fbutton {
+  width: auto;
+  height: auto;
+  padding: 12px;
+  background-color: #5c5cff;
+  color: white;
+  font-weight: bold;
+  font-size: 14px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.fbutton:hover {
+  background-color: #4747e0;
+}
+
+@media (max-width: 768px) {
+  .slide img {
+    width: 100%;
+  }
+
+  .slide p {
+    font-size: 14px;
+  }
+
+  .buttons a {
+    font-size: 14px;
+    padding: 8px 12px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .nav {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+
+  h2 {
+    margin-left: 0px;
+  }
+
+  .links {
+    margin-right: 0px;
+  }
+
+  .home {
+    justify-content: space-evenly;
+  }
+
+  .profilephoto {
+    flex: auto;
+    width: 100px;
+    height: 300px;
+    display: flex;
+    margin-bottom: 25px;
+    align-content: center;
+
+  }
+
+}
+
+@media screen and (max-width: 843px) {
+  .nav {
+    display: none;
+  }
+
+}
+
+@media screen and (max-width: 768px) {
+  .nav {
+    display: none;
+  }
+
+  .profilephoto {
+    width: 100%;
+    display: flex;
+    align-content: center;
+  }
+
+  .form {
+    display: flex;
+    margin-top: 30px;
+    width: 100%;
+    height: auto;
+    justify-content: space-around;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .fleft {
+    flex: 50%;
+    margin-left: auto;
+    justify-content: center;
+  }
+
+  .fright {
+    flex: 50%;
+    justify-content: center;
+  }
+
+  .lskill {
+    display: flex;
+    width: 80%;
+    height: auto;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .icon {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: space-around;
+  }
+
+  .icon img,
+  .icon1 img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .acontent {
+    display: flex;
+    width: 100%;
+    height: auto;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .contenta {
+    flex: 50%;
+  }
+
+  .aboutimage {
+    flex: 50%;
+    height: auto;
+  }
+
+  .aimage {
+    width: 100%;
+    height: 300px;
+    ;
+    display: block;
+
+  }
+}
